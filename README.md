@@ -1,5 +1,7 @@
 # Talker chat MVP
 
+> **Current repository: Vanilla Talker.** This is the separate, locally runnable foundation, with full Talker ancestry and no hosted remote or application deployment. The Talker deployment and verification statements retained below describe the source application, not a deployment of Vanilla. Start with the isolated local configuration in [Vanilla status](docs/vanilla-status.md); see [Vanilla releases](docs/vanilla-releases.md) for validated releases.
+
 Typed, single-thread chat proof of concept. Chat history is in-memory and clears on page reload; the backend scopes Antigravity context to the current page conversation. Start locally with the explicit `mock` provider first; its replies are labeled and do not verify Google access. The live provider keeps its key in the backend only.
 
 ## Local setup

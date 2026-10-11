@@ -1,5 +1,7 @@
 # Portfolio chat: project brief
 
+Current repository role: **Vanilla Talker**, a local-only living foundation. Application requirements are inherited from Talker; hosted infrastructure, billing confirmations, and past live checks below describe Talker and do not establish Vanilla deployment or provider access. Current Vanilla verification is recorded separately in [vanilla-status.md](vanilla-status.md).
+
 Repository-family decisions approved 2026-10-11 live in [talker-architecture.md](talker-architecture.md), with Git operations in [sync-workflow.md](sync-workflow.md). This brief remains the application requirements reference. Talker retains its existing deployment; Vanilla is a separate local foundation. Repository-specific role notes take precedence over inherited deployment/status descriptions.
 
 Updated: 2026-10-10. Status: Talker milestone 1 is deployed; user reports successful Antigravity chat, multi-turn context, cancellation/recovery, cold-start, and 28 requests in one day without quota problems. Decision: do not implement a Gemini fallback for chat; Antigravity remains the sole chat provider. Recommendations below are proposed defaults, not additional user commitments. Current checks and next steps live in [implementation-status.md](implementation-status.md); execution details live in [implementation-handover.md](implementation-handover.md).

@@ -1,5 +1,7 @@
 # Project context
 
+Repository role: **Vanilla Talker**, the separate local foundation. No hosted remote or application deployment is configured. The inherited Talker milestone/deployment statements below are historical context; use [docs/vanilla-status.md](docs/vanilla-status.md) for current local verification and [docs/vanilla-releases.md](docs/vanilla-releases.md) for release notes. Commit Vanilla work locally; never infer push or deployment authorization from Talker's ordinary workflow. Keep general capabilities runnable and specialized behavior in descendants.
+
 Read [docs/project-brief.md](docs/project-brief.md) before planning or implementation. It is the source of truth for requirements, recommendations, milestones, open questions, and research links. Update it when decisions change; avoid duplicating it here.
 
 Read [docs/implementation-handover.md](docs/implementation-handover.md) for the original execution order and acceptance checks. The user intends GPT-6-astra with high reasoning for planning/review and GPT-6-luna with medium reasoning for implementation/bug fixes in a later task. This records the user's workflow; it does not change the active model.
