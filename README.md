@@ -46,3 +46,9 @@ The authenticated backend provisions single-use constrained ephemeral tokens; th
 `frontend/netlify.toml` configures the static frontend and `render.yaml` describes the Python API. Set secrets in the hosting dashboards, set the deployed Netlify origin in `ALLOWED_ORIGINS`, and set `VITE_API_URL` to the Render API URL at frontend build time. Netlify and Render are deployed; the user reports production chat and cancellation recovery working.
 
 The current entry-attempt, chat caps, speech cache, and speech request caps live in process memory and reset on service restarts. They are not durable quota enforcement. Typed chat, bounded conversational appearance controls, and local speech output are implemented; hands-free speech input and conversation persistence are not.
+
+## Talker family
+
+This repository remains the independently deployed Talker application. Vanilla Talker is a separate local, full-history foundation; its releases are adopted deliberately, with no automatic synchronization or deployment.
+
+Read [the family architecture](docs/talker-architecture.md) and [the synchronization workflow](docs/sync-workflow.md) for repository roles, whole-release adoption, and selective feature promotion. Current verification is recorded in [implementation status](docs/implementation-status.md); older setup and milestone statements above are retained as project history.
