@@ -1,6 +1,13 @@
-# Talker chat MVP
+# TScheduler
 
-> **Current repository: Vanilla Talker.** This is the separate, locally runnable foundation, with full Talker ancestry and no hosted remote or application deployment. The Talker deployment and verification statements retained below describe the source application, not a deployment of Vanilla. Start with the isolated local configuration in [Vanilla status](docs/vanilla-status.md); see [Vanilla releases](docs/vanilla-releases.md) for validated releases.
+> **Current repository: TScheduler.** TScheduler helps [intended users] schedule [tasks, appointments,
+or other items] through a conversational interface.
+It is an independent application derived from Vanilla Talker.
+Its GitHub repository is https://github.com/szlaci3/t-scheduler.
+Foundation updates are adopted deliberately from tagged Vanilla Talker releases.
+
+Inherited Talker/Vanilla requirements and verification records describe
+the source applications. They are not the requirements of current repository.
 
 Typed, single-thread chat proof of concept. Chat history is in-memory and clears on page reload; the backend scopes Antigravity context to the current page conversation. Start locally with the explicit `mock` provider first; its replies are labeled and do not verify Google access. The live provider keeps its key in the backend only.
 

@@ -1,6 +1,20 @@
-# Portfolio chat: project brief
+# TScheduler — Project brief
 
-Current repository role: **Vanilla Talker**, a local-only living foundation. Application requirements are inherited from Talker; hosted infrastructure, billing confirmations, and past live checks below describe Talker and do not establish Vanilla deployment or provider access. Current Vanilla verification is recorded separately in [vanilla-status.md](vanilla-status.md).
+## Project identity
+
+- Application name: TScheduler
+- Repository: https://github.com/szlaci3/t-scheduler
+- Role: Independent descendant of Vanilla Talker.
+- Purpose: [Add purpose.]
+- Starting foundation release: vanilla/v1.0.0
+- Foundation release commit: 842f0f6da0aae8d624f388dda3f54f1307d2b351
+- Current stage: Initial child setup; verification pending.
+- Planned hosting: Netlify frontend and a separate backend service.
+- Foundation updates: Selected complete Vanilla releases, adopted
+  through reviewed and tested merges.
+
+Inherited Talker/Vanilla requirements and verification records describe
+the source applications. They are not the requirements of current repository.
 
 Repository-family decisions approved 2026-10-11 live in [talker-architecture.md](talker-architecture.md), with Git operations in [sync-workflow.md](sync-workflow.md). This brief remains the application requirements reference. Talker retains its existing deployment; Vanilla is a separate local foundation. Repository-specific role notes take precedence over inherited deployment/status descriptions.
 
