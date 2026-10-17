@@ -1,6 +1,6 @@
 # Implementation status
 
-- 2026-10-17 local Brian issue: React Strict Mode's development remount disposed the speech client and left the status checking; tying the client lifecycle to the token effect fixed it, confirmed by the user's successful local playback, 92 frontend tests, production build, six backend route tests, and live local Brian catalogue/synthesis checks, while hosted playback remains unverified.
+- 2026-10-17 local Brian issue: React Strict Mode's development remount disposed the speech client and left the status checking; tying the client lifecycle to the token effect fixed it, confirmed by the user's successful playback.
 
 - 2026-10-10 user verification and visibility decision: the user reports manual Dialog browser verification passed, including voice interruption, and prefers its near-immediate native audio response. This confirms the reported scenarios; prolonged session renewal and any unreported device/language combinations remain unverified. The Live button is now hidden, with its code and behavioral tests retained. Future work: decide whether to remove Live-specific code or un-hide its control. The original Gemini-audio replay recommendation is recorded as a future plan in [project-brief.md](project-brief.md#future-voice-plan); replay behavior has not changed.
 
