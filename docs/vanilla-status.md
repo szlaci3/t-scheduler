@@ -28,8 +28,10 @@ In another:
 ```powershell
 Set-Location C:/Users/szala/Combine/VanillaTalker/frontend
 $env:VITE_API_URL = 'http://127.0.0.1:8081'
-npm run dev -- --host 127.0.0.1 --port 5174 --strictPort
+npm.cmd run dev -- --host 127.0.0.1 --port 5174 --strictPort
 ```
+
+Use `npm.cmd` explicitly in Windows PowerShell. In the inspected environment, `npm` selects `npm.ps1` and the Vite flags are rejected by npm instead of forwarded to the dev server.
 
 Open `http://127.0.0.1:5174`. The mock provider labels its replies and does not exercise conversational model tool calls. Appearance controls remain available; actual provider/chat/voice verification requires separately configured local access. Keep billing disabled, confirm the current provider/model availability before live implementation changes, and retain the opt-in local Antigravity test's seven-request rolling-minute limit. Do not infer Vanilla provider access or billing status from inherited Talker reports.
 
@@ -40,3 +42,7 @@ Open `http://127.0.0.1:5174`. The mock provider labels its replies and does not 
 - Limits and caches are process-local; this is not durable quota enforcement. No new production readiness or public release claim is made.
 - The original README, implementation handover, and implementation status contain historical Talker deployment and milestone statements. This file describes current Vanilla verification.
 - Release/adoption operations follow [sync-workflow.md](sync-workflow.md). The initial release tag is created only after these checks and Git/content verification; its exact commit can be read with `git rev-parse 'refs/tags/vanilla/v1.0.0^{}'`.
+
+## Local startup command correction — 2026-10-11
+
+The documented `npm run dev -- ...` invocation failed under Windows PowerShell with npm 12.0.2: npm parsed Vite's host/port/strictPort flags as its own options. Reproduced the wrapper's parsing behavior and verified `npm.cmd run dev -- --host 127.0.0.1 --port 5174 --strictPort` forwards the flags to Vite 6.4.3, starts the actual server, and serves the application with HTTP 200. Stopped only the test-owned server process tree afterward. The local API URL remains `http://127.0.0.1:8081`; no browser interaction or real model requests were performed. Updated this startup example and both shared workflow copies; application code is unchanged.
